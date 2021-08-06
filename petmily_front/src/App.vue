@@ -12,7 +12,7 @@
       </span>
       <span v-if="confirmLogin">
         <button class="mx-5 text-decoration-none" @click="logout">로그아웃</button>
-        <router-link to="/" class="mx-5 text-decoration-none">마이페이지</router-link>
+        <router-link to="/accounts/profile" class="mx-5 text-decoration-none">마이페이지</router-link>
       </span>
       <span v-else>
         <router-link @click="goTologin" to="/login" class="mx-5 text-decoration-none">로그인</router-link>
@@ -26,12 +26,14 @@
 </template>
 <script>
 import { onMounted, computed } from 'vue'
+import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
 
 export default {
   name: 'App',
   setup () {
     const router = useRouter()
+    const store = useStore()
 
     const confirmLogin = computed(() => {
       console.log(sessionStorage.getItem('isLogin'))
@@ -45,8 +47,11 @@ export default {
       sessionStorage.removeItem('isAgency')
       router.go()
     }
-      
-    onMounted(() => { router.push('/home') }) 
+    
+    store.state.isLogin = sessionStorage.getItem('isLogin')
+    store.state.isAgency = sessionStorage.getItem('isAgency')
+    
+    onMounted(() => { router.push('/home') })
 
     return { confirmLogin, logout }
   }

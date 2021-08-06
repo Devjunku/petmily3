@@ -11,6 +11,7 @@ import ChangePassword from '@/views/accounts/ChangePassword.vue'
 import AnimalList from '@/views/animal/AnimalList.vue'
 import AnimalRegister from '@/views/animal/AnimalRegister.vue'
 import AnimalRegisterSuccess from '@/views/animal/AnimalRegisterSuccess.vue'
+import MyPage from '@/views/accounts/MyPage.vue'
 
 const routes = [
   {
@@ -67,6 +68,11 @@ const routes = [
     path: '/animalregistersuccess',
     name: 'animalregistersuccess',
     component: AnimalRegisterSuccess
+  },
+  {
+    path: '/accounts/mypage',
+    name: 'mypage',
+    component: MyPage
   },
   // {
   //   path: '/',

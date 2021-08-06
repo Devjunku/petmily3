@@ -1,5 +1,5 @@
 <template>
-  <div class="Jbgc container" style="height: 350px;">
+  <div class="Jbgc container" style="height: 400px;">
     <div class="d-flex justify-content-even">
       <div>
         
@@ -12,7 +12,7 @@
 </template>
 <script>
 export default {
-  
+  name: 'Jumbotron'
 }
 </script>
 <style>

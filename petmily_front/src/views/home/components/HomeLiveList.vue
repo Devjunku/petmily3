@@ -1,10 +1,10 @@
 <template>
   <br>
-  <div class="Jbgc container" style="height: 350px;">
-    <div class="d-flex justify-content-even">
-      <div>
-        
-      </div>
+  <div class="Jbgc container" style="height: 400px;">
+    <div class="d-flex justify-content-center">
+      <h2>
+        진행중인 라이브
+      </h2>
       <div>
         
       </div>

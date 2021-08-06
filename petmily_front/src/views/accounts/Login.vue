@@ -121,8 +121,6 @@ export default {
         .then(res => {
           console.log(res.data)
           localStorage.setItem('jwt', res.data.accessToken)
-          store.state.isLogin = true
-          store.state.isAgency = true
           sessionStorage.setItem('isLogin', store.state.isLogin)
           sessionStorage.setItem('isAgency', store.state.isAgency)
           router.go()

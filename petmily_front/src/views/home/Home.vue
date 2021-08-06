@@ -8,6 +8,7 @@
 <script>
 import HomeLiveList from "@/views/home/components/HomeLiveList"
 import HomeAnimalLIst from "@/views/home/components/HomeAnimalLIst"
+import HomeGuardian from "@/views/home/components/HomeGuardian"
 import Jumbotron from "@/views/home/components/Jumbotron"
 export default {
   name: 'Home',
@@ -15,6 +16,7 @@ export default {
     Jumbotron,
     HomeLiveList,
     HomeAnimalLIst,
+    HomeGuardian,
   },
   setup() {
 
