@@ -5,18 +5,21 @@
       내 프로필
     </h2>
   </div>
-  <div class="Jbgc mx-auto" style="height: 400px; width: 800px;">
-    <div class="position-relative inner d-flex justify-content-evenly align-items-center">
-      <div>
-        Profile Photo
+  <div>
+    <div class="Jbgc mx-auto" style="height: 400px; width: 800px;">
+      <div class="d-inline position-relative inner30 d-flex justify-content-evenly align-items-center">
+        <div>
+          Profile Photo
+        </div>
+        <div>
+          <p>NAME</p>
+          <p>EMAIL</p>
+          <p>PHONE</p>
+        </div>
       </div>
-      <div>
-        <p>ID</p>
-        <p>AGENCY</p>
-        <p>EMAIL</p>
-        <p>PHONE</p>
-        <p>NAME</p>
-      </div>
+    </div>
+    <div class="Jbgc mx-auto d-flex justify-content-end" style="width: 800px;">
+      <button class="btn-logo m-3">정보 수정 하기</button>
     </div>
   </div>
 </template>
@@ -37,7 +40,14 @@ export default {
   border-radius: 12px;
 }
 
-.inner {
+.inner30 {
   top: 30%;
+}
+
+.btn-logo {
+  width: 10rem;
+  height: 3rem;
+  border-color: #B8B6F9;
+  background-color: #B8B6F9;
 }
 </style>

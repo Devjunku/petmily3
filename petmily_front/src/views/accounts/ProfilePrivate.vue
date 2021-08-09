@@ -45,6 +45,8 @@ export default {
       .then((res) => {
         console.log(1)
         console.log(res.data)
+        
+
       })
       .catch((err) => {
         console.log(2)
