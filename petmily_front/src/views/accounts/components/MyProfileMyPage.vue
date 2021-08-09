@@ -6,7 +6,7 @@
 </template>
 <script>
 export default {
-  name: 'myprofilemypage'
+  name: 'MyProfileMyPage'
 }
 </script>
 <style>

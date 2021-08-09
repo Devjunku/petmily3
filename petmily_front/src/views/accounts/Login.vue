@@ -111,7 +111,7 @@ import { useStore } from "vuex";
 import { useRouter } from "vue-router";
 
 export default {
-  name: "login",
+  name: "Login",
   setup() {
     const store = useStore();
     const router = useRouter();
@@ -164,7 +164,9 @@ export default {
             console.log(res.data);
             localStorage.setItem("jwt", res.data.accessToken);
             store.state.isLogin = true;
+            store.state.isUser = true;
             sessionStorage.setItem("isLogin", store.state.isLogin);
+            sessionStorage.setItem("isUser", store.state.isUser);
             location.href = "/home";
           })
           .catch((err) => {

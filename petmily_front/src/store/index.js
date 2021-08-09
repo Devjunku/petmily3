@@ -14,6 +14,7 @@ export default createStore({
     findEmail: "",
     isLogin: false,
     isAgency: false,
+    isUser: false,
   },
   mutations: {
   },

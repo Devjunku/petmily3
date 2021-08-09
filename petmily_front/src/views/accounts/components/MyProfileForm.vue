@@ -11,8 +11,6 @@
         Profile Photo
       </div>
       <div>
-        <p>ID</p>
-        <p>AGENCY</p>
         <p>EMAIL</p>
         <p>PHONE</p>
         <p>NAME</p>
@@ -22,7 +20,7 @@
 </template>
 <script>
 export default {
-  name: 'myprofileform',
+  name: 'MyProfileForm',
 }
 </script>
 <style>

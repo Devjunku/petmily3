@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-  name: 'myprofilefavoritenanimal',
+  name: 'MyProfileFavoriteAnimal',
 }
 </script>
 <style>

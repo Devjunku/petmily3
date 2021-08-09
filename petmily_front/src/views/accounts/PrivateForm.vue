@@ -99,12 +99,8 @@ import { useRouter } from "vue-router";
 import JumbotronTerms from "@/views/accounts/components/JumbotronTerms";
 
 export default {
-  data() {
-    return {};
-  },
-  methods: {},
+  name: "PrivateForm",
   components: { JumbotronTerms },
-  name: "privateform",
 
   setup() {
     const file = ref(null);
@@ -245,7 +241,7 @@ export default {
         credentials: new AWS.CognitoIdentityCredentials({
           IdentityPoolId: state.IdentityPoolId,
         }),
-      });
+      })
 
       const s3 = new AWS.S3({
         apiVersion: "2006-03-01",
@@ -278,7 +274,7 @@ export default {
       confirmNumber,
       handleFileUpload,
       upload,
-      file,
+      file
     };
   },
 };

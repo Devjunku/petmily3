@@ -14,12 +14,12 @@
   </div>
 </template>
 <script>
+import MyProfileMyPage from '@/views/accounts/components/MyProfileMyPage'
 import MyProfileFavoriteAnimal from '@/views/accounts/components/MyProfileFavoriteAnimal'
 import MyProfileForm from '@/views/accounts/components/MyProfileForm'
-import MyProfileMyPage from '@/views/accounts/components/MyProfileMyPage'
 
 export default {
-  name: 'myprofile',
+  name: 'ProfileAgency',
   components: {
     MyProfileMyPage,
     MyProfileForm,

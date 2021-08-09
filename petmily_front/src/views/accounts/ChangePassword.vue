@@ -82,7 +82,7 @@ import { useRouter } from "vue-router";
 import axios from "axios";
 import { reactive } from "@vue/reactivity";
 export default {
-  name: "changepassword",
+  name: "ChangePassword",
   setup() {
     const state = reactive({
       password: "",

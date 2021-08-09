@@ -67,7 +67,7 @@ import { useRouter } from 'vue-router'
 import JumbotronTerms from '@/views/accounts/components/JumbotronTerms'
 export default {
   components: { JumbotronTerms },
-  name: 'agencyform',
+  name: 'AgencyForm',
   componenet: {
     JumbotronTerms,
   },
@@ -149,7 +149,7 @@ export default {
       const reg_required = /.{1,}/
       const reg_phone = /^\d{3}-\d{3,4}-\d{4}$/
       const reg_name = /^[가-힣]+$/
-
+      //  BUG! 띄어쓰기 가능하도록 만들어야해요!
       if (!reg_name.test(state.agencyname)) {
         return alert("기관 이름은 필수 항목입니다.")
       }

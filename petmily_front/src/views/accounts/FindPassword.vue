@@ -65,7 +65,7 @@ import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
 import axios from 'axios'
 export default {
-  name: 'findpassword',
+  name: 'FindPassword',
   setup () {
     const store = useStore()
     const router = useRouter()

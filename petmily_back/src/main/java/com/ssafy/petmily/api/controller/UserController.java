@@ -90,7 +90,7 @@ public class UserController {
 		SsafyUserDetails userDetails = (SsafyUserDetails) authentication.getDetails();
 		String email = userDetails.getUsername();
 		User user = userService.getUserByEmailAndType(email);
-
+		
 		return ResponseEntity.status(200).body(UserRes.of(user));
 	}
 
